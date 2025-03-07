@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import { db } from "../../config/firebaseConfig";
 
 export default function AddExpenseScreen() {
     const [amount, setAmount] = useState("");
